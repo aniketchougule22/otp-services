@@ -1,4 +1,4 @@
-# generate-otp
+# otp-services
 ### An OTP generator package for node js.
 
 Written in ES5/ES6 for maximum compatibility.
