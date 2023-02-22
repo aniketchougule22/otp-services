@@ -11,19 +11,21 @@ npm install otp-services
 
 ### To generate OTP
 
-var otp-services = require("otp-services");
+var otp_services = require("otp-services");
 
-var otp = otp-services.setNumber(4);  // any digit 4, 6, 8,...
+var otp = otp_services.setNumber(4);  // any digit 4, 6, 8,...
 
 console.log('otp', otp);
 
+Output: otp 2206
+
 ### To verify OTP
 
-var otp-services = require("otp-services");
+var otp_services = require("otp-services");
 
-pass the dateTime and number if minutes
+verifyOTP() takes two parameters, dateTime and number of minutes
 
-var time = otp-services.verifyOTP('', 5);
+var time = otp_services.verifyOTP('2023-02-22 15:52:34', 5);
 
 if (time == true) {
 
@@ -32,7 +34,7 @@ if (time == true) {
 } else {
 
     console.log(`OTP expired..!`);
-    
+
 }
 
 ## License
