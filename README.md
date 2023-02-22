@@ -22,12 +22,17 @@ console.log('otp', otp);
 var otp-services = require("otp-services");
 
 pass the dateTime and number if minutes
+
 var time = otp-services.verifyOTP('', 5);
 
 if (time == true) {
+
     console.log(`Verify successfully..!`);
+
 } else {
+
     console.log(`OTP expired..!`);
+    
 }
 
 ## License
