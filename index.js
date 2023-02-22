@@ -22,8 +22,37 @@ const setNumber = (length) => {
     return otp
 }
 
+
+/* to check OTP or Password timestamp */
+
+const verifyOTP = (dateString, min) => {
+    try
+    {
+        const time = (dateString) => {
+            let timeInMilliseconds = new Date()  - new Date(dateString);
+            return (timeInMilliseconds/1000/60);   // convert to years
+        }
+        
+
+        if(time(dateString) < min)
+        {
+            return  true
+        }
+        else
+        {
+            return false
+        }
+    }
+    catch (err)
+    {
+        return err
+    }
+}
+
+
 module.exports = { 
-    setNumber
+    setNumber,
+    verifyOTP
 }
   
   
