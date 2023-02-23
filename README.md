@@ -48,5 +48,3 @@ if (time == true) {
 ## License
 
 MIT
-
-```
