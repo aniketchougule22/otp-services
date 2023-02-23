@@ -1,6 +1,7 @@
 # otp-services
 ### An OTP generator package for node js.
 
+A highly customizable and easy to use OTP Generator and verifier in Javascript. Just import the package and send your inputs. It will generate the OTP.
 Written in ES5/ES6 for maximum compatibility.
 
 ## Install
@@ -10,32 +11,39 @@ npm install otp-services
 ## Usage
 
 ### To generate OTP
+```
 
-var otp_services = require("otp-services");
+let otp_services = require("otp-services");
 
-var otp = otp_services.setNumber(4);  // any digit 4, 6, 8,...
+let otp = otp_services.setNumber(4);  // any digit 4, 6, 8,...
 
-console.log('otp', otp);
 
 Output: otp 2206
 
+```
+
 ### To verify OTP
 
-var otp_services = require("otp-services");
+verifyOTP() sets the expiration time of OTP to your input minutes after the current time.
+It takes two parameters, dateTime and number of minutes.
 
-verifyOTP() takes two parameters, dateTime and number of minutes
+```
 
-var time = otp_services.verifyOTP('2023-02-22 15:52:34', 5);
+let otp_services = require("otp-services");
+
+let time = otp_services.verifyOTP('2023-02-22 15:52:34', 5);
 
 if (time == true) {
 
-    console.log(`Verify successfully..!`);
+    `Verify successfully..!`
 
 } else {
 
-    console.log(`OTP expired..!`);
+    `OTP expired..!`
 
 }
+
+```
 
 ## License
 

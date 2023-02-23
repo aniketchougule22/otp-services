@@ -1,6 +1,6 @@
 {
   "name": "otp-services",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "'otp-services' is simple one time otp generator and can be used as otp or password generator.",
   "main": "index.js",
   "scripts": {
@@ -14,5 +14,6 @@
     "password"
   ],
   "author": "Aniket Chougule",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": "https://github.com/aniketchougule22/otp-services"
 }
