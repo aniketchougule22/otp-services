@@ -11,7 +11,7 @@ npm install otp-services
 ## Usage
 
 ### To generate OTP
-```
+```javascript
 
 let otp_services = require("otp-services");
 
@@ -27,7 +27,7 @@ Output: otp 2206
 verifyOTP() sets the expiration time of OTP to your input minutes after the current time.
 It takes two parameters, dateTime and number of minutes.
 
-```
+```javascript
 
 let otp_services = require("otp-services");
 
