@@ -1,6 +1,6 @@
 {
   "name": "otp-services",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "'otp-services' is simple one time otp generator and can be used as otp or password generator.",
   "main": "index.js",
   "scripts": {
