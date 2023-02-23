@@ -6,7 +6,11 @@ Written in ES5/ES6 for maximum compatibility.
 
 ## Install
 
+```javascript
+
 npm install otp-services
+
+```
 
 ## Usage
 
